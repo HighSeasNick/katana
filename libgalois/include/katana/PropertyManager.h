@@ -35,6 +35,7 @@ public:
       const std::shared_ptr<arrow::Table>& property);
 
   CacheStats GetPropertyCacheStats() const { return cache_->GetStats(); }
+  void LogMemoryStats(const std::string& message);
 
 private:
   void MakePropertyCache();

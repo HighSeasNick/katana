@@ -58,8 +58,9 @@ katana::MemorySupervisor::SanityCheck() {
   }
   if (active_ < 0) {
     LogState(sanity_str, active_, standby_);
-    // TODO(witchel)
-    // KATANA_LOG_ASSERT(false);
+    // If this assert fires, then it is likely that some property was made active
+    // without notifying the memory supervisor and it is not being pushed to standby.
+    KATANA_LOG_ASSERT(false);
   }
   if (standby_ < 0) {
     LogState(sanity_str, active_, standby_);
@@ -251,6 +252,11 @@ katana::MemorySupervisor::GetPropertyCacheStats() const {
   const auto& info = it->second;
   auto* pm = dynamic_cast<PropertyManager*>(info.manager_.get());
   return pm->GetPropertyCacheStats();
+}
+
+void
+katana::MemorySupervisor::LogMemoryStats(const std::string& message) {
+  policy_->LogMemoryStats(message, active_, standby_);
 }
 
 katana::PropertyManager*

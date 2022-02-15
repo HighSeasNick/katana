@@ -64,6 +64,7 @@ public:
   /// Provide access to a property manager, which manages the property cache
   PropertyManager* GetPropertyManager();
   CacheStats GetPropertyCacheStats() const;
+  void LogMemoryStats(const std::string& message);
 
   /// Calls sysconf
   static uint64_t GetTotalSystemMemory();

@@ -24,18 +24,25 @@ namespace {
 
 void
 LogIt(const std::string& str, katana::MemoryPolicy::MemInfo* mem_info) {
-  auto scope = katana::GetTracer().StartActiveSpan(str);
-  scope.span().Log(
-      "mem_stats", {
-                       {"rss_gb", katana::ToGB(mem_info->rss_bytes)},
-                       {"oom_score", mem_info->oom_score},
-                       {"used_ratio", mem_info->used_ratio},
-                       {"active_gb", katana::ToGB(mem_info->active)},
-                       {"standby_gb", katana::ToGB(mem_info->standby)},
-                   });
+  katana::GetTracer().GetActiveSpan().Log(
+      str, {
+               {"rss_gb", katana::ToGB(mem_info->rss_bytes)},
+               {"oom_score", mem_info->oom_score},
+               {"used_ratio", mem_info->used_ratio},
+               {"active_gb", katana::ToGB(mem_info->active)},
+               {"standby_gb", katana::ToGB(mem_info->standby)},
+           });
 }
 
 }  // namespace
+
+void
+katana::MemoryPolicy::LogMemoryStats(
+    const std::string& message, count_t active, count_t standby) {
+  MemInfo mem_info;
+  UpdateMemInfo(&mem_info, active, standby);
+  LogIt(message, &mem_info);
+}
 
 void
 katana::MemoryPolicy::UpdateMemInfo(

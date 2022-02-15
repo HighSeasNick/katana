@@ -33,6 +33,9 @@ public:
       [[maybe_unused]] count_t active,
       [[maybe_unused]] count_t standby) const = 0;
 
+  void LogMemoryStats(
+      const std::string& message, count_t active, count_t standby);
+
   /// Utility function to find out our OOM score from Linux
   static uint64_t OOMScore();
 

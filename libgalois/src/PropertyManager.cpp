@@ -33,7 +33,7 @@ katana::PropertyManager::GetProperty(const katana::Uri& property_path) {
         static_cast<count_t>(katana::ApproxTableMemUse(property.value()));
     MemorySupervisor::Get().StandbyToActive(Name(), bytes);
     katana::GetTracer().GetActiveSpan().Log(
-        "property cache get evict",
+        "property cache get_and_evict",
         {
             {"storage_name", property_path.BaseName()},
             {"approx_size_gb",
@@ -42,7 +42,7 @@ katana::PropertyManager::GetProperty(const katana::Uri& property_path) {
     return property.value();
   }
   katana::GetTracer().GetActiveSpan().Log(
-      "property cache get evict not found",
+      "property cache get_and_evict not found",
       {
           {"storage_name", property_path.BaseName()},
       });
