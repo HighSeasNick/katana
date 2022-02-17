@@ -78,8 +78,8 @@ html_title = "Katana"
 html_theme_options = {
     "show_prev_next": False,
     "switcher": {
-        "json_url": "~/home/bobby/workspace/katana/docs/_static/switcher.json",
-        "url_template": "~/home/bobby/workspace/katana/conda_build/docs" + "/{version}/",
+        "json_url": "~/workspace/katana/docs/_static/switcher.json",
+        "url_template": "~/workspace/katana/conda_build/docs" + "/{version}/",
         "version_match": "latest",
     },
     "navbar_end": ["version-switcher"],
