@@ -5,6 +5,15 @@
 	--pst-font-family-heading: 'Roboto', Georgia, Times, var(--pst-font-family-base-system);
 	--pst-font-family-monospace: 'Roboto Mono', var(--pst-font-family-monospace-system);
 
+	/* font sizes */
+	--pst-font-size-h1: 48px;
+	--pst-font-size-h2: 24px;
+	--pst-font-size-h3: 18px;
+	--pst-font-size-h4: 21px;
+	--pst-font-size-h5: 18px;
+	--pst-font-size-h6: 16px;
+	--pst-font-size-base: 16px;
+	--pst-font-size-milli: 12px;
 	/*	 Color   */
 	--pst-color-primary: 0, 0, 0;
 	--pst-color-text-base: 0, 0, 0;
@@ -23,7 +32,40 @@ body {
 	letter-spacing: 0.05em;
 }
 
+h1{
+	font-weight: 500;
+}
+h2, h3 {
+	font-weight: 400;
+}
+h5, h6, p, span {
+	font-weight: 300;
+}
+
 div.nboutput.container div.output_area {
 	max-height: 50vh;
 }
 
+.bd-sidebar {
+	background-color: #F6F7F9;
+	padding-left: 100px;
+}
+
+.bd-sidebar search.form-control,
+.bd-sidebar i{
+	background-color: transparent;
+	padding-bottom: 1.5rem;
+}
+
+@media (min-width: 720px) {
+	.container-xl {
+		max-width: 100vw;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.bd-sidebar {
+		height: calc(100vh - var(--pst-header-height));
+		top: calc(var(--pst-header-height));
+	}
+}
