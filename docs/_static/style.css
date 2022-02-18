@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+	--pst-font-family-base: 'Roboto', var(--pst-font-family-base-system);
+	--pst-font-family-heading: 'Roboto', Georgia, Times, var(--pst-font-family-base-system);
+	--pst-font-family-monospace: 'Roboto Mono', var(--pst-font-family-monospace-system);
+
+	/*	 Color   */
+	--pst-color-primary: 0, 0, 0;
+	--pst-color-text-base: 0, 0, 0;
+	--pst-color-link: 135, 84, 245;
+	--pst-color-link-hover: 135, 84, 245;
+
+	--pst-color-active-navigation: 135, 84, 245;
+	--pst-color-navbar-link: 0, 0 ,0;
+	--pst-color-sidebar-link: 0, 0, 0;
+	--pst-color-sidebar-caption: 0, 0, 0;
+	--pst-color-toc-link: 0, 0, 0;
+
+}
+body {
+	padding-top: var(--pst-header-height);
+	letter-spacing: 0.05em;
+}
+
 div.nboutput.container div.output_area {
 	max-height: 50vh;
 }
 
-footer {
-	background-color: green !important;
-}
