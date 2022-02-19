@@ -20,9 +20,11 @@
 	--pst-color-link: 135, 84, 245;
 	--pst-color-link-hover: 135, 84, 245;
 
-	--pst-color-active-navigation: 0, 0, 0;
+	--pst-color-active-navigation: 135, 84, 245;
 	--pst-color-navbar-link: 0, 0 ,0;
 	--pst-color-sidebar-link: 0, 0, 0;
+	--pst-color-sidebar-link-hover: 0, 0, 0;
+	--pst-color-sidebar-link-active: 0, 0, 0;
 	--pst-color-sidebar-caption: 0, 0, 0;
 	--pst-color-toc-link: 0, 0, 0;
 
@@ -65,15 +67,34 @@ div.nboutput.container div.output_area {
 	padding-left: 100px;
 }
 
-.bd-sidebar input[type=search].form-control,
-.bd-sidebar form i{
+.bd-sidebar input[type=search].form-control {
 	background-color: transparent;
 	padding-bottom: 1.5rem;
 }
 
+.bd-search .icon {
+	top: 18;
+}
+
 .bd-sidebar .nav li>a,
+.bd-sidebar .nav .active>a,
+.bd-sidebar .nav .active:hover>a,
+.bd-sidebar .nav .active>a{
+	font-weight: 300;
+}
+
+.bd-sidebar .nav li>a {
+	padding: 15px 0.5rem;
+}
+
 .bd-sidebar .nav .active>a {
 	font-weight: 300;
+	background-color: white;
+	border-left: 2px solid purple;
+}
+
+.bd-sidebar .nav li>a:hover {
+	background-color: rgba(234, 236, 240, 1);
 }
 
 /*  version switcher button */
