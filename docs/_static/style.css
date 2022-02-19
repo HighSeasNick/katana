@@ -73,7 +73,7 @@ div.nboutput.container div.output_area {
 }
 
 .bd-search .icon {
-	top: 18;
+	top: 18px;
 }
 
 .bd-sidebar .nav li>a,
@@ -84,7 +84,9 @@ div.nboutput.container div.output_area {
 }
 
 .bd-sidebar .nav li>a {
-	padding: 15px 0.5rem;
+	padding: 10px 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .bd-sidebar .nav .active>a {
