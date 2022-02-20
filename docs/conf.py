@@ -80,17 +80,17 @@ html_theme_options = {
         {
             "rel": "icon",
             "sizes": "16x16",
-            "href": "favicon/favicon-16x16.png",
+            "href": "http://170.187.252.217/docs/_static/favicon/favicon-16x16.png",
         },
         {
             "rel": "icon",
             "sizes": "32x32",
-            "href": "favicon/favicon-32x32.png",
+            "href": "http://170.187.252.217/docs/_static/favicon/favicon-32x32.png",
         },
         {
             "rel": "apple-touch-icon",
             "sizes": "152x152",
-            "href": "apple-touch-icon-152x152.png"
+            "href": "http://170.187.252.217/docs/_static/favicon/apple-touch-icon-152x152.png"
         },
     ],
     "show_prev_next": False,
