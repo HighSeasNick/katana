@@ -49,8 +49,16 @@ h5, h6, p, span {
 	letter-spacing: 0.03em;
 }
 
+h5, h6, p {
+	margin-top: 30px;
+}
+
 div.nboutput.container div.output_area {
 	max-height: 50vh;
+}
+
+.admonition.note, div.admonition.note {
+	padding: 7px;
 }
 
 /* nav bar */
@@ -59,6 +67,7 @@ div.nboutput.container div.output_area {
 	font-size: 14px;
 	font-weight: 400;
 }
+
 
 /* left Sidebar*/
 
@@ -107,9 +116,8 @@ div.nboutput.container div.output_area {
 	border: none;
 }
 
-.version_switcher_button::after {
-	margin-left: 1em;
-	margin-right: .25em;
+.dropdown-toggle:after {
+	margin: 0 5px 0 10px;
 }
 
 @media (min-width: 720px) {
@@ -122,5 +130,11 @@ div.nboutput.container div.output_area {
 	.bd-sidebar {
 		height: calc(100vh - var(--pst-header-height));
 		top: calc(var(--pst-header-height));
+		border-right: none;
+	}
+
+	.navbar-collapse {
+		margin-left: 116px;
+		border-left: 1px solid rgba(187, 187, 187, 1);
 	}
 }
