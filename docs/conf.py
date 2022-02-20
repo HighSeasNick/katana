@@ -75,6 +75,7 @@ else:
 html_theme = "pydata_sphinx_theme"
 html_logo = "_static/logo.png"
 html_title = "Katana"
+html_favicon = "http://170.187.252.217/docs/_static/favicon/favicon.ico"
 html_theme_options = {
     "favicons": [
         {
