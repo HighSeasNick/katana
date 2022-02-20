@@ -76,6 +76,23 @@ html_theme = "pydata_sphinx_theme"
 html_logo = "_static/logo.png"
 html_title = "Katana"
 html_theme_options = {
+    "favicons": [
+        {
+            "rel": "icon",
+            "sizes": "16x16",
+            "href": "favicon/favicon-16x16.png",
+        },
+        {
+            "rel": "icon",
+            "sizes": "32x32",
+            "href": "favicon/favicon-32x32.png",
+        },
+        {
+            "rel": "apple-touch-icon",
+            "sizes": "152x152",
+            "href": "apple-touch-icon-152x152.png"
+        },
+    ],
     "show_prev_next": False,
     "switcher": {
         "json_url": "http://170.187.252.217/docs/_static/switcher.json",
