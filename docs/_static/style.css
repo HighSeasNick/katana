@@ -53,6 +53,10 @@ h5, h6, p {
 	margin-top: 30px;
 }
 
+footer p {
+	margin-top: 0;
+}
+
 div.nboutput.container div.output_area {
 	max-height: 50vh;
 }
@@ -65,16 +69,13 @@ div.nboutput.container div.output_area {
 	width: 24.5%;
 }
 
-.navbar-center {
-	width: 45%;
+#navbar-center {
+	width: 60%;
 }
 
-.navbar-center {
-	width: 45%;
-}
 
-.navbar-main-elements {
-	justify-content: space-between;
+#navbar-main-elements {
+	justify-content: space-evenly;
 }
 
 /* nav bar */
@@ -148,6 +149,12 @@ div.nboutput.container div.output_area {
 	border: 1px solid rgba(0,0,0,.125);
 }
 
+@media (min-width: 960px){
+	.navbar .container-xl {
+		justify-content: start;
+	}
+}
+
 @media (min-width: 720px) {
 	.container-xl {
 		max-width: 100vw;
@@ -159,9 +166,6 @@ div.nboutput.container div.output_area {
 		height: calc(100vh - var(--pst-header-height));
 		top: calc(var(--pst-header-height));
 		border-right: none;
-	}
-	.navbar .container-xl {
-		justify-content: start;
 	}
 
 	.navbar-collapse {
