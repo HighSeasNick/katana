@@ -132,6 +132,9 @@ div.nboutput.container div.output_area {
 		top: calc(var(--pst-header-height));
 		border-right: none;
 	}
+	.navbar .container-xl {
+		justify-content: start;
+	}
 
 	.navbar-collapse {
 		margin-left: 116px;
