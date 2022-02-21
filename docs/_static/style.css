@@ -103,7 +103,8 @@ div.nboutput.container div.output_area {
 }
 
 .bd-sidebar input[type=search].form-control::-ms-input-placeholder,
-.bd-sidebar input[type=search].form-control::placeholder {
+.bd-sidebar input[type=search].form-control::placeholder,
+input#search-input::placeholder{
 	color: black;
 	font-weight: 300;
 }
