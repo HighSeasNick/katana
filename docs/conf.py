@@ -100,7 +100,7 @@ html_theme_options = {
         "url_template": "http://170.187.252.217/docs" + "/{version}/",
         "version_match": "latest",
     },
-    "navbar_end": ["version-switcher"],
+    "navbar_end": ["version-switcher.html"],
 }
 # html_theme_path = []
 
