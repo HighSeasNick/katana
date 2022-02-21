@@ -93,13 +93,28 @@ div.nboutput.container div.output_area {
 	padding-left: 100px;
 }
 
+.bd-sidebar label {
+	top: 5px;
+}
+
 .bd-sidebar input[type=search].form-control {
 	background-color: transparent;
 	padding-bottom: 1.5rem;
 }
 
+.bd-sidebar input[type=search].form-control::-ms-input-placeholder,
+.bd-sidebar input[type=search].form-control::placeholder {
+	color: black;
+	font-weight: 300;
+}
+
 .bd-search .icon {
 	top: 18px;
+}
+
+.bd-search svg {
+	margin-bottom: auto;
+	margin-right: -20px;
 }
 
 .bd-sidebar .nav li>a,
