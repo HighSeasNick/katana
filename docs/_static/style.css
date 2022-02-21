@@ -102,7 +102,6 @@ div.nboutput.container div.output_area {
 	padding-bottom: 1.5rem;
 }
 
-.bd-sidebar input[type=search].form-control::-ms-input-placeholder,
 .bd-sidebar input[type=search].form-control::placeholder,
 input#search-input::placeholder{
 	color: black;
