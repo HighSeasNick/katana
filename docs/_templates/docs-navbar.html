@@ -13,6 +13,13 @@
         </div>
     </button>
 
+    <script>
+        const hamburger = document.querySelector('.navbar-toggler');
+        hamburger.addEventListener('click', function(e){
+            hamburger.classList.toggle('hamburger-open');
+        })
+    </script>
+
     {% set navbar_class, navbar_align = navbar_align_class() %}
     <div id="navbar-collapsible" class="{{ navbar_class }} collapse navbar-collapse">
         <div id="navbar-center" class="{{ navbar_align }}">
