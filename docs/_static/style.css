@@ -52,6 +52,9 @@ h5, h6, p, span {
 h5, h6, p {
 	margin-top: 30px;
 }
+main {
+	max-width: 800px;
+}
 
 footer p {
 	margin-top: 0;
@@ -65,7 +68,7 @@ div.nboutput.container div.output_area {
 	padding: 7px;
 }
 #navbar-start {
-	padding-left: 2%;
+	padding-left: 1.5%;
 	width: 24.5%;
 	min-width: 230px;
 }
