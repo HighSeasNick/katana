@@ -7,7 +7,7 @@
     </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="{{ _('Toggle navigation') }}">
-
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     {% set navbar_class, navbar_align = navbar_align_class() %}
@@ -26,9 +26,6 @@
                 {% include navbar_item %}
             </div>
             {% endfor %}
-            <div>
-                {%- include 'version-switcher.html' -%}
-            </div>
         </div>
     </div>
 </div>
