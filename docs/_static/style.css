@@ -67,6 +67,11 @@ div.nboutput.container div.output_area {
 #navbar-start {
 	padding-left: 5%;
 	width: 24.5%;
+	min-width: 230px;
+}
+
+#navbar-start .navbar-brand {
+	min-width: 230px;
 }
 
 #navbar-center {
@@ -75,7 +80,7 @@ div.nboutput.container div.output_area {
 
 
 #navbar-main-elements {
-	justify-content: space-evenly;
+	justify-content: start;
 }
 
 /* nav bar */
@@ -83,6 +88,7 @@ div.nboutput.container div.output_area {
 .navbar-light .navbar-nav>.active>.nav-link {
 	font-size: 12px;
 	font-weight: 400;
+	padding-right: 10px;
 }
 
 
@@ -90,11 +96,12 @@ div.nboutput.container div.output_area {
 
 .bd-sidebar {
 	background-color: #F6F7F9;
-	padding-left: 100px;
+	padding-left: 6%;
 }
 
 .bd-sidebar label {
-	top: 5px;
+	top: 7px;
+	right: 2%;
 }
 
 .bd-sidebar input[type=search].form-control {
@@ -142,7 +149,7 @@ input#search-input::placeholder{
 
 /*  version switcher button */
 
-.version_switcher_button{
+#version_switcher_button{
 	border-radius: 2px;
 	background-color: rgba(61, 107, 245, 1);
 	border: none;
@@ -162,6 +169,13 @@ input#search-input::placeholder{
 	color: rgba(61, 107, 245, 1);
 	background-color: transparent;
 	border: 1px solid rgba(0,0,0,.125);
+}
+
+@media (min-width: 1200px) {
+	#navbar-start {
+		padding-left: 2%;
+	}
+
 }
 
 @media (min-width: 960px){
