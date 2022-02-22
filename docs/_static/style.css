@@ -94,6 +94,9 @@ div.nboutput.container div.output_area {
 	padding-right: 15px;
 }
 
+button.navbar-toggler {
+	border: none;
+}
 
 /* left Sidebar*/
 
