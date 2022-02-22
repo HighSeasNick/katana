@@ -100,14 +100,14 @@ button.navbar-toggler {
 
 /* blog hamburger */
 
-.thin-hamburger {
+.navbar-toggler .thin-hamburger {
 	width: 36px;
 	height: 36px;
 	display: inline-block;
 	position: relative;
 	z-index: 10;
 }
-.thin-hamburger span {
+.navbar-toggler.collapsed .thin-hamburger span {
 	width: 32px;
 	height: 2px;
 	background-color: black;
@@ -117,17 +117,17 @@ button.navbar-toggler {
 	transition: transform 220ms ease-out;
 	transition: transform 220ms ease-out, -webkit-transform 220ms ease-out;
 }
-.thin-hamburger span:nth-child(1) {
+.navbar-toggler.collapsed .thin-hamburger span:nth-child(1) {
 	top: 12px;
 }
-.thin-hamburger span:nth-child(2) {
+.navbar-toggler.collapsed .thin-hamburger span:nth-child(2) {
 	top: 24px;
 }
-.thin-hamburger span:nth-child(1) {
+.navbar-toggler .thin-hamburger span:nth-child(1) {
 	-webkit-transform: translateY(6px) rotate(45deg);
 	transform: translateY(6px) rotate(45deg);
 }
-.thin-hamburger .btn-mobile span:nth-child(2) {
+.navbar-toggler .thin-hamburger span:nth-child(2) {
 	-webkit-transform: translateY(-6px) rotate(-45deg);
 	transform: translateY(-6px) rotate(-45deg);
 }
