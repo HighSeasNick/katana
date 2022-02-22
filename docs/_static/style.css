@@ -117,7 +117,7 @@ button.navbar-toggler {
 	transition: transform 220ms ease-out;
 	transition: transform 220ms ease-out, -webkit-transform 220ms ease-out;
 }
-.navbar-toggler.thin-hamburger span:nth-child(1) {
+.navbar-toggler .thin-hamburger span:nth-child(1) {
 	top: 12px;
 }
 .navbar-toggler .thin-hamburger span:nth-child(2) {
