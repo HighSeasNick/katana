@@ -78,7 +78,7 @@ div.nboutput.container div.output_area {
 }
 
 #navbar-center {
-	width: 60%;
+	width: 100%;
 }
 
 
@@ -89,9 +89,9 @@ div.nboutput.container div.output_area {
 /* nav bar */
 .navbar-light .navbar-nav li a.nav-link,
 .navbar-light .navbar-nav>.active>.nav-link {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 400;
-	padding-right: 10px;
+	padding-right: 15px;
 }
 
 
