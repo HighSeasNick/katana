@@ -96,11 +96,11 @@ html_theme_options = {
     ],
     "show_prev_next": False,
     "switcher": {
-        "json_url": "http://170.187.252.217/docs/_static/switcher.json",
-        "url_template": "http://170.187.252.217/docs" + "/{version}/",
+        "json_url": "https://" + publish_url + "/switcher.json",
+        "url_template": "https://" + publish_url + "/{version}/",
         "version_match": "latest",
     },
-    "navbar_end": ["version-switcher.html"],
+    "navbar_end": ["version-switcher"],
 }
 # html_theme_path = []
 
