@@ -65,7 +65,7 @@ div.nboutput.container div.output_area {
 	padding: 7px;
 }
 #navbar-start {
-	padding-left: 5%;
+	padding-left: 2%;
 	width: 24.5%;
 	min-width: 230px;
 }
@@ -173,7 +173,7 @@ input#search-input::placeholder{
 
 @media (min-width: 1200px) {
 	#navbar-start {
-		padding-left: 2%;
+		padding-left: 5%;
 	}
 
 }
