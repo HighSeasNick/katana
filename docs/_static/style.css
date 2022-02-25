@@ -50,7 +50,7 @@ h5, h6, p, span {
 }
 
 code span {
-	font-weight: 400;
+	font-weight: 500;
 }
 
 h5, h6, p {
@@ -58,6 +58,10 @@ h5, h6, p {
 }
 main {
 	max-width: 800px !important;
+}
+
+main a {
+	font-weight: 400;
 }
 
 footer p {
@@ -96,6 +100,10 @@ div.nboutput.container div.output_area {
 	font-size: 14px;
 	font-weight: 400;
 	padding-right: 15px;
+}
+
+.navbar-light .navbar-nav>.active>.nav-link {
+	font-weight: 500;
 }
 
 button.navbar-toggler {
