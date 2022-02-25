@@ -12,7 +12,7 @@
 	--pst-font-size-h4: 21px;
 	--pst-font-size-h5: 18px;
 	--pst-font-size-h6: 16px;
-	--pst-font-size-base: 16px;
+	--pst-font-size-base: 17px;
 	--pst-font-size-milli: 12px;
 	/*	 Color   */
 	--pst-color-primary: 0, 0, 0;
@@ -45,7 +45,7 @@ h2, h3 {
 	margin-bottom: 30px;
 }
 h5, h6, p, span {
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 0.03em;
 }
 
@@ -192,7 +192,7 @@ input#search-input::placeholder{
 
 #version_switcher_button{
 	border-radius: 2px;
-	background-color: rgba(45, 29, 61, 1);
+	background-color: rgb(135, 84, 245);
 	border: none;
 }
 
@@ -244,5 +244,11 @@ input#search-input::placeholder{
 
 	.navbar-collapse {
 		border-left: 1px solid rgba(187, 187, 187, 1);
+	}
+}
+
+@media (min-width: 2500px){
+	main {
+		max-width: 1200px !important;
 	}
 }
